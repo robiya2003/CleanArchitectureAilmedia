@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Services.Actors
+namespace Application.Abstractions.Repositories
 {
-    public interface IActorServise
+    public interface IActorRepositories
     {
     }
 }

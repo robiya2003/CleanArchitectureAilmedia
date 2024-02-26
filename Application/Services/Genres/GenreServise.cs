@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services.Genres
 {
-    internal class GenreServise:IGenreServise
+    public class GenreServise:IGenreServise
     {
     }
 }

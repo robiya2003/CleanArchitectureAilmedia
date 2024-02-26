@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services.Actors
 {
-    internal class ActorServise:IActorServise
+    public class ActorServise:IActorServise
     {
     }
 }

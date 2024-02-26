@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services.FilmMakers
 {
-    internal class FilmMakerServise:IFilmMakerServise
+    public class FilmMakerServise:IFilmMakerServise
     {
     }
 }

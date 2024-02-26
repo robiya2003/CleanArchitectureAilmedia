@@ -1,23 +1,23 @@
-﻿using Domain.Common;
+﻿using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Entities
+namespace Application.DTOS
 {
-    public class Film:AudiTable
+    public class FilmDTO
     {
         public string Title { get; set; }
         public string Description { get; set; }
-        public long FilmMakerId {  get; set; }
+        public long FilmMakerId { get; set; }
         public int AgeRestriction { get; set; }
         public int PublishedYear { get; set; }
         public string photopath { get; set; }
         public string videopath { get; set; }
-        public FilmMaker FilmMaker { get; set; }
-        public List<Actor> Actors { get; set; }
-        public  List<Genre> Genres { get; set; }
+        
+        public List<long> Actors { get; set; }
+        public List<long> Genres { get; set; }
     }
 }
