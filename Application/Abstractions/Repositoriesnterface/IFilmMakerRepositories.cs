@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Services.FilmMakers
+namespace Application.Abstractions.Repositories
 {
-    public interface IFilmMakerServise
+    public interface IFilmMakerRepositories
     {
-        public Task<FilmMaker> AddFilmMakerAsync(FilmMakerDTO FilmMakerDTO);
+        public Task<FilmMaker> AddFilmMakerAsync(FilmMaker FilmMaker);
         public Task<FilmMaker> GetByIdFilmMakerAsync(long FilmMakerId);
         public Task<List<FilmMaker>> GetAllFilmMakerAsync();
-        public Task<FilmMaker> UpdateFilmMakerAsync(FilmMakerDTO FilmMakerDTO, long FilmMakerId);
+        public Task<FilmMaker> UpdateFilmMakerAsync(FilmMaker FilmMaker, long FilmMakerId);
         public Task<FilmMaker> DeleteFilmMakerAsync(long FilmMakerId);
     }
 }

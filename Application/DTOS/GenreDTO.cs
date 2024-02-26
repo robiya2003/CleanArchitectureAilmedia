@@ -10,6 +10,5 @@ namespace Application.DTOS
     public class GenreDTO
     {
         public string Name { get; set; }
-        public List<long> films { get; set; }
     }
 }

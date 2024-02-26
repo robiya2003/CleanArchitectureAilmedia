@@ -1,16 +1,15 @@
-﻿using Application.DTOS;
-using Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Application.Services.FilmMakers
+using Application.Abstractions.Repositories;
+using Domain.Entities;
+namespace Infastructure.Repositories
 {
-    public class FilmMakerServise : IFilmMakerServise
+    internal class FilmMakerRepository : IFilmMakerRepositories
     {
-        public Task<FilmMaker> AddFilmMakerAsync(FilmMakerDTO FilmMakerDTO)
+        public Task<FilmMaker> AddFilmMakerAsync(FilmMaker FilmMaker)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +29,7 @@ namespace Application.Services.FilmMakers
             throw new NotImplementedException();
         }
 
-        public Task<FilmMaker> UpdateFilmMakerAsync(FilmMakerDTO FilmMakerDTO, long FilmMakerId)
+        public Task<FilmMaker> UpdateFilmMakerAsync(FilmMaker FilmMaker, long FilmMakerId)
         {
             throw new NotImplementedException();
         }

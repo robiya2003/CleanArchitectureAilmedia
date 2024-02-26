@@ -15,6 +15,5 @@ namespace Application.DTOS
         public string Description { get; set; }
         public Gender Gender { get; set; }
         public string photopath { get; set; }
-        public List<long> Films { get; set; }
     }
 }

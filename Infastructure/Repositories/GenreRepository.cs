@@ -1,16 +1,15 @@
-﻿using Application.DTOS;
-using Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Application.Services.Genres
+using Application.Abstractions.Repositories;
+using Domain.Entities;
+namespace Infastructure.Repositories
 {
-    public class GenreServise : IGenreServise
+    internal class GenreRepository : IGenreRepositories
     {
-        public Task<Genre> AddGenreAsync(GenreDTO GenreDTO)
+        public Task<Genre> AddGenreAsync(Genre Genre)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +29,7 @@ namespace Application.Services.Genres
             throw new NotImplementedException();
         }
 
-        public Task<Genre> UpdateGenreAsync(GenreDTO GenreDTO, long GenreId)
+        public Task<Genre> UpdateGenreAsync(Genre Genre, long GenreId)
         {
             throw new NotImplementedException();
         }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Abstractions.Repositories
+namespace Infastructure
 {
-    public interface IFilmRepositories
+    internal class ApplicationDbContext
     {
     }
 }

@@ -1,24 +1,15 @@
-﻿using Application.Abstractions.Repositories;
-using Application.DTOS;
-using Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Application.Services.Actors
+using Application.Abstractions.Repositories;
+using Domain.Entities;
+namespace Infastructure.Repositories
 {
-    public class ActorServise : IActorServise
+    internal class ActorRepository : IActorRepositories
     {
-        private readonly IActorRepositories _actorRepositories;
-        public ActorServise(IActorRepositories actorRepositories)
-
-        {
-            _actorRepositories = actorRepositories;
-        }
-
-        public Task<Actor> AddActorAsync(ActorDTO ActorDTO)
+        public Task<Actor> AddActorAsync(Actor Actor)
         {
             throw new NotImplementedException();
         }
@@ -38,7 +29,7 @@ namespace Application.Services.Actors
             throw new NotImplementedException();
         }
 
-        public Task<Actor> UpdateActorAsync(ActorDTO ActorDTO, long ActorId)
+        public Task<Actor> UpdateActorAsync(Actor Actor, long ActorId)
         {
             throw new NotImplementedException();
         }

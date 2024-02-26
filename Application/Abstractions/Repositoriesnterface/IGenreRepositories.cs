@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Services.Genres
+namespace Application.Abstractions.Repositories
 {
-    public interface IGenreServise
+    public interface IGenreRepositories
     {
-        public Task<Genre> AddGenreAsync(GenreDTO GenreDTO);
+        public Task<Genre> AddGenreAsync(Genre Genre);
         public Task<Genre> GetByIdGenreAsync(long GenreId);
         public Task<List<Genre>> GetAllGenreAsync();
-        public Task<Genre> UpdateGenreAsync(GenreDTO GenreDTO, long GenreId);
+        public Task<Genre> UpdateGenreAsync(Genre Genre, long GenreId);
         public Task<Genre> DeleteGenreAsync(long GenreId);
     }
 }

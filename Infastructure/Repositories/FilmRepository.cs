@@ -1,36 +1,35 @@
-﻿using Application.DTOS;
-using Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Application.Services.Genres
+using Application.Abstractions.Repositories;
+using Domain.Entities;
+namespace Infastructure.Repositories
 {
-    public class GenreServise : IGenreServise
+    internal class FilmRepository : IFilmRepositories
     {
-        public Task<Genre> AddGenreAsync(GenreDTO GenreDTO)
+        public Task<Film> AddFilmAsync(Film film)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Genre> DeleteGenreAsync(long GenreId)
+        public Task<Film> DeleteFilmAsync(long filmId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<Genre>> GetAllGenreAsync()
+        public Task<List<Film>> GetAllFilmAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<Genre> GetByIdGenreAsync(long GenreId)
+        public Task<Film> GetByIdFilmAsync(long filmId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Genre> UpdateGenreAsync(GenreDTO GenreDTO, long GenreId)
+        public Task<Film> UpdateFilmAsync(Film film, long filmId)
         {
             throw new NotImplementedException();
         }
